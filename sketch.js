@@ -49,7 +49,7 @@ function setup() {
     World.add(world, ground);
 
     box1 = Bodies.rectangle(width/2,650,width,10,{isStatic:true});
-    world.add(world,box1);
+    World.add(world,box1);
 
     box2 = Bodies.rectangle(width/2,650,width,10,{isStatic:true});
     world.add(world,box2);
