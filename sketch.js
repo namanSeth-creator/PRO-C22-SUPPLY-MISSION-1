@@ -38,7 +38,7 @@ function setup() {
 	  box3.shapeColor=color("brown")
 
     engine = Engine.create();
-    world = engine.world;
+    World = engine.world;
 
     packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:3, isStatic:true});
     World.add(world, packageBody);
@@ -52,10 +52,10 @@ function setup() {
     World.add(world,box1);
 
     box2 = Bodies.rectangle(width/2,650,width,10,{isStatic:true});
-    world.add(world,box2);
+    World.add(world,box2);
 
     box3 = Bodies.rectangle(width/2,650,width,10,{isStatic:true});
-    world.add(world,box3);
+    World.add(world,box3);
 
     Engine.run(engine);
   
